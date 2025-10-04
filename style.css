@@ -339,7 +339,7 @@ button:hover {
 }
 
 /* Mobile */
-/* @media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   ul {
     display: none;
   }
@@ -349,6 +349,18 @@ button:hover {
     font-size: 25px;
     cursor: pointer;
     color: white;
+  }
+  .showData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 23px;
+    background-color: gray;
+    gap: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 75px;
+    right: 3%;
   }
 
   .mainText h1 {
@@ -385,4 +397,4 @@ button:hover {
     gap: 10px;
     margin-left: 0;
   }
-} */
+}
