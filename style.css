@@ -284,6 +284,79 @@ button:hover {
   margin-left: 190px;
 }
 
+/* .skills-section {
+  text-align: center;
+  padding: 60px 20px;
+} */
+
+.head h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.head h2 {
+  /* font-size: 1.2rem; */
+  color: white;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  /* background: #fff; */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.237);
+  padding: 30px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.394);
+}
+
+.skill-card:hover img {
+  transform: scale(1.4) rotate(5deg);
+}
+
+/* 📱 Responsive */
+/* @media (max-width: 768px) {
+  .skills-container {
+    gap: 20px;
+  }
+
+  .skill-card {
+    width: 140px;
+    padding: 20px;
+  }
+
+  .head h1 {
+    font-size: 2.5rem;
+  }
+} */
+
 /* Media query */
 
 /* @media screen and (max-width: 1000px) {
