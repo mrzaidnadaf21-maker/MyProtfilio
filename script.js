@@ -4,8 +4,8 @@ let bar = document.getElementById("bar");
 
 cvBtn.addEventListener("click", function () {
   const link = document.createElement("a");
-  link.href = "zaid-forntend-resume.pdf";
-  link.download = "resume.pdf";
+  link.href = "Document.pdf";
+  link.download = "Document.pdf";
   link.style.display = "none";
   document.body.appendChild(link);
   link.click();
