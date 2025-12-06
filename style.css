@@ -14,11 +14,6 @@ body {
   background-color: rgb(17, 16, 16);
   color: white;
 }
-/* 
-.container {
-  min-height: 100%;
-  background: transparent;
-} */
 
 nav {
   display: flex;
@@ -68,9 +63,7 @@ ul li a:hover {
   align-items: center;
   margin-top: 55px;
 }
-.mainText {
-  /* margin-right: 160px; */
-}
+
 .mainText h1 {
   font-size: 100px;
 }
@@ -87,14 +80,7 @@ ul li a:hover {
 .main img {
   height: 600px;
 }
-/* .mainText button {
-  width: 140px;
-  height: 40px;
-  background-color: rgb(0, 157, 255);
-  font-size: 19px;
-  border: none;
-  color: white;
-} */
+
 .form-actions {
   display: flex;
   align-items: center;
@@ -139,13 +125,6 @@ ul li a:hover {
   color: black;
 }
 
-/* 
-button:hover {
-  border: 2px solid rgb(0, 149, 255);
-  background-color: transparent;
-  cursor: pointer;
-} */
-
 .head {
   text-align: center;
   padding: 80px;
@@ -153,42 +132,10 @@ button:hover {
 .head span {
   color: rgb(0, 149, 255);
 }
-/* .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(28, 28, 28);
-  padding: 52px;
-}
-
-.about img {
-  width: 390px;
-  border-radius: 50%;
-  border: 4px solid rgb(0, 85, 255);
-  margin-inline: 65px;
-  margin-right: 129px;
-}
-.aboutText {
-  margin-top: 99px;
-}
-.aboutText p {
-  margin-top: 22px;
-}
-
-.aboutText h2 span {
-  color: rgb(0, 140, 255);
-}
-.aboutText p {
-  color: rgb(136, 136, 136);
-}
-.aboutText h2 {
-  font-size: 30px;
-} */
 
 /* About us Css */
 
 .aboutus {
-  /* background-color: rgb(28, 28, 28); */
   padding: 60px 20px;
 }
 
@@ -197,10 +144,6 @@ button:hover {
   color: white;
   font-size: 40px;
   margin-bottom: 40px;
-}
-
-.head h1 span {
-  /* color: rgb(0, 140, 255); */
 }
 
 .about {
@@ -246,28 +189,6 @@ button:hover {
   margin-left: 6px;
   font-weight: 500;
 }
-
-/* Responsive Design */
-/* @media (max-width: 768px) {
-  .about {
-    text-align: center;
-  }
-
-  .about img {
-    width: 280px;
-    height: 280px;
-  }
-
-  .aboutText {
-    max-width: 100%;
-  }
-} */
-
-/* .service {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
 .card {
   width: 250px;
@@ -321,14 +242,6 @@ button:hover {
 .workCard p {
   margin-top: 11px;
 }
-/* .workCard a {
-  text-decoration: none;
-  position: absolute;
-  margin-top: 20px;
-  padding: 6px 12px;
-  background-color: rgb(0, 149, 255);
-  color: white;
-} */
 
 .workCard a {
   display: inline-block;
@@ -377,11 +290,6 @@ button:hover {
   margin-left: 190px;
 }
 
-/* .skills-section {
-  text-align: center;
-  padding: 60px 20px;
-} */
-
 .head h1 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -389,7 +297,6 @@ button:hover {
 }
 
 .head h2 {
-  /* font-size: 1.2rem; */
   color: white;
   margin-bottom: 40px;
 }
@@ -403,7 +310,6 @@ button:hover {
 }
 
 .skill-card {
-  /* background: #fff; */
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.237);
   padding: 30px;
@@ -434,149 +340,157 @@ button:hover {
   transform: scale(1.4) rotate(5deg);
 }
 
-/* 📱 Responsive */
-/* @media (max-width: 768px) {
-  .skills-container {
-    gap: 20px;
+/* responsive */
+
+@media (max-width: 992px) {
+  nav {
+    padding: 15px 25px;
   }
 
-  .skill-card {
-    width: 140px;
-    padding: 20px;
-  }
-
-  .head h1 {
-    font-size: 2.5rem;
-  }
-} */
-
-/* Media query */
-
-/* @media screen and (max-width: 1000px) {
   .main {
-    display: block;
+    flex-direction: column-reverse;
     text-align: center;
-    margin-top: 155px;
   }
-} */
 
-/* @media screen and (max-width: 550) {
+  .main img {
+    width: 75%;
+    height: auto;
+  }
+
   .mainText h1 {
-    font-size: 36px;
+    font-size: 60px;
   }
-  .mainText h3 {
-    font-size: 21px;
-  }
+
   .mainText p {
-    font-size: 20px;
-  }
-} */
-
-/* Tablet */
-@media screen and (max-width: 1000px) {
-  .main {
-    display: block;
-    text-align: center;
-    margin-top: 150px;
+    font-size: 24px;
   }
 
-  .mainText {
-    margin: auto;
-    margin-bottom: 30px;
-  }
-
+  /* About Section */
   .about {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 
   .about img {
-    margin: auto;
+    width: 280px;
+    height: 280px;
+  }
+
+  .aboutText {
+    max-width: 100%;
+  }
+
+  /* Skills */
+  .skills-container {
+    gap: 25px;
+  }
+
+  .skill-card {
+    width: 160px;
+  }
+
+  /* Works */
+  .myWork {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .workCard {
+    width: 260px;
+  }
+
+  /* Contact */
+  .Contact {
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 768px) {
+  /* Navbar Responsive */
   ul {
     display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  ul.show {
+    display: flex;
   }
 
   #bar {
     display: block;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
-    color: white;
-  }
-  .showData {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 23px;
-    background-color: gray;
-    gap: 20px;
-    border-radius: 5px;
-    position: fixed;
-    top: 75px;
-    right: 3%;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 550px) {
-  ul {
-    display: none;
   }
 
-  #bar {
-    display: block;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-  }
-  .showData {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 23px;
-    background-color: gray;
-    gap: 20px;
-    border-radius: 5px;
-    position: fixed;
-    top: 75px;
-    right: 3%;
+  nav {
+    justify-content: space-between;
+    padding: 22px;
   }
 
+  /* Main Section */
   .mainText h1 {
-    font-size: 36px;
-  }
-
-  .mainText h3 {
-    font-size: 21px;
+    font-size: 45px;
   }
 
   .mainText p {
     font-size: 20px;
   }
 
-  .service,
-  .myWork {
-    flex-direction: column;
-    align-items: center;
+  .main img {
+    width: 80%;
   }
 
-  .card,
+  /* Skills */
+  .skill-card {
+    width: 45%;
+  }
+
+  /* Works */
   .workCard {
     width: 90%;
   }
 
+  /* Contact */
   .Contact {
     width: 95%;
-    margin-left: 22px;
-    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainText h1 {
+    font-size: 35px;
+  }
+
+  .mainText p {
+    font-size: 18px;
   }
 
   .form-actions {
     flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
+    gap: 15px;
+  }
+
+  .about img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .skills-container {
+    gap: 15px;
+  }
+
+  .skill-card {
+    width: 80%;
+  }
+
+  .workCard {
+    width: 100%;
   }
 }
